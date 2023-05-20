@@ -1,4 +1,3 @@
-import Logo from '../../assets/img/logo.png';
 import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 function Footer() {
@@ -37,9 +36,6 @@ function Footer() {
                 <div className="row justify-content-between align-items-center">
                     <div className="col-md-6">
                         <p className="mb-0">© {new Date().getFullYear()} RoyalComerce</p>
-                    </div>
-                    <div className="col-md-6 text-md-end">
-                        <img src={Logo} alt="MiEmpresa" className="img-fluid" width="50" />
                     </div>
                 </div>
             </div>
