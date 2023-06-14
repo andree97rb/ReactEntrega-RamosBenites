@@ -1,0 +1,9 @@
+.nav-contenedor{
+    padding: 0 30px!important;
+}
+
+.nav-contenedor .logo{
+    width: 39px;
+    border-radius: 5px;
+    margin-right: 5px;
+}

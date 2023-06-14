@@ -1,0 +1,15 @@
+.cart-widget {
+    position: relative;
+    cursor: pointer;
+}
+
+.itemsIndicador {
+    background-color: red;
+    border-radius: 0.5px;
+    color: white;
+    padding: 2px;
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+}

@@ -1,28 +1,32 @@
-import './App.css';
-import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import CustomCarousel from './componentes/Carousel/Carousel';
-import Slide from './componentes/Slide/Slide';
-import NavBar from './componentes/NavBar/NavBar';
-import Footer from './componentes/Footer/Footer';
+import { CarritoProvider } from './context/CarritoContext';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
+import CustomCarousel from './components/Carousel/Carousel';
+import Footer from './components/Footer/Footer';
+
 function App() {
-  let username = "Richard Ramos"
   return (
     <>
       <BrowserRouter>
-        <header>
-          <NavBar username={username} avatarUrl="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" onLogout={() => console.log('Logged out!')} />
-        </header>
-        <Slide />
-        <CustomCarousel />
-        <Routes>
-          <Route path='/' element={<ItemListContainer />} />
-          <Route path='/categoria/:idCategory' element={<ItemListContainer />} />
-          <Route path='/item/:idItem' element={<ItemDetailContainer />} />
-        </Routes>
+        <CarritoProvider>
+          <NavBar />
+          <CustomCarousel />
+          <Routes>
+            <Route path='/' element={<ItemListContainer />} />
+            <Route path='/categoria/:idCategoria' element={<ItemListContainer />} />
+            <Route path='/item/:idItem' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout' element={<Checkout />} />
+            <Route path='*' element={<h2>Sitio en Construcción</h2>} />
+          </Routes>
+        </CarritoProvider>
       </BrowserRouter>
       <Footer />
+
     </>
   );
 }

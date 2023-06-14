@@ -1,0 +1,15 @@
+.slideContenedor{
+    background-color: #B8621B;
+    padding: 10px!important;
+}
+
+.important-text{
+    padding: 5px;
+    width: fit-content;
+    background-color: #f80000;
+    border-radius: 5px;
+}
+
+.text-description{
+    margin-left: 10px;
+}
