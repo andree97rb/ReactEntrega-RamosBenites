@@ -31,3 +31,6 @@ Este es un proyecto de ecommerce básico que se utiliza para el curso de React. 
 4. En la sección "Firestore" de Firebase, crea una nueva base de datos y configura las reglas de seguridad para permitir lectura/escritura solamente a usuarios autenticados.
 5. En la sección "Project settings" de Firebase, haz clic en "Add app" y sigue las instrucciones para agregar una nueva aplicación web.
 6. Copia las credenciales de Firebase y configura las variables de entorno en el archivo .env de tu proyecto.
+
+## Se adjunta url del video demostrativo:
+- https://drive.google.com/drive/folders/1TINB5lfTkGI6Bep4oHdYEyMCB0pAOzOI?usp=sharing
